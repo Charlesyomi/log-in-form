@@ -1,0 +1,136 @@
+
+
+@font-face {
+    font-family: Poppins;
+    src: url("https://fonts.google.com/specimen/Poppins");
+    font-weight: 400 700;
+}
+
+/* style guides */
+
+:root{
+    font-size: 16px;
+}
+html{
+    --red:hsl(0,100%,74%);
+    --green:hsl(154,59%,51%);
+    --blue:hsl(248,32%,49%);
+    --dark-blue:(249,10%,26%);
+    --grayish-blue:hsl(248,32%,77%)
+}
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    line-height:150%;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    background-image:url('./img/bg-intro-mobile.png'),linear-gradient(90deg, hsl(0,100%,74%), hsl(0,100%,74%));
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:20% 7%;
+    background-image: transparent;
+}
+
+main>*{
+    flex-basis: 350px;
+}
+
+.intro-text{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.intro-text p{
+    margin-top: 1.2rem;
+}
+
+form .form-body{
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+}
+form header{
+    background-color: var(--blue);
+    padding: .8rem 5rem;
+    text-align: center;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+form .content{
+    display: flex;
+    flex-direction: column;
+}
+
+form .content>*{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+
+.error{
+    display: none;
+}
+.active{
+    font-size: small;
+    display: block;
+    text-align: end;
+    line-height: .1rem;
+    color: var(--red);
+}
+
+button{
+    text-transform: uppercase;
+    border: hidden;
+    color: #fff;
+    background-color: var(--green);
+}
+input:not([type="button"]){
+    border: 1px solid grey;
+}
+
+footer{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+@media only screen and (min-width:376px){
+
+    body{
+        padding: 5rem 0;
+        background-image: url('./img/bg-intro-desktop.png'),linear-gradient(var(--red),var(--red));
+        background-position: center,center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100%, 90%;
+       
+    }
+    main{
+        width: 90%;
+        margin: auto;
+        padding: 4rem 7%;
+    }
+    .intro-text{
+        text-align: start;
+    }   
+}
