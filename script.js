@@ -1,9 +1,9 @@
-// if the browsers javascript is enable disable html validity
+// if the browser's javascript is enable disable html validity
 
 const logInForm = document.getElementById("log-in-form")
 
 const formInputs = document.getElementsByTagName('input')
-console.log(formInputs)
+// console.log(formInputs)
 
 const errorContainer = document.querySelectorAll('input + span.error')
 console.log(errorContainer)
