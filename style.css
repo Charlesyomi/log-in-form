@@ -80,9 +80,27 @@ form .content{
 
 form .content>*{
     margin-bottom: 1rem;
+    /* padding: 1rem; */
+    /* border-radius: .4rem; */
+}
+
+input,button{
+    margin-bottom: 1rem;
     padding: 1rem;
     border-radius: .4rem;
+    width: 100%;
 }
+
+.field-container{
+    position: relative;
+}
+.error-icon{
+    position: absolute;
+    padding: 1rem;
+    right: 0%;
+    opacity: 0;
+}
+
 
 
 .error{

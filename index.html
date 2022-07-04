@@ -27,12 +27,31 @@
 
                 <div class="form-body">
                     <div class="content">
-                    <input type="text" name="first-name" placeholder="First Name" required pattern="^[\w]{2,15}" title="name consists 2 to 15 alphabetic characters"> <span class="error" aria-live="polite"></span>
-                    <input type="text" name="last-name" placeholder="Last Name" required pattern="^[\w]{2,15}"title="name consists 2 to 15 alphabetic characters">  <span class="error" aria-live="polite"></span>
 
-                    <input type="email" name="email-address" placeholder="Email Address" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" title="e.g abc@gmail.com"> <span class="error" aria-live="polite"></span>
+                    <div class="field-container">
+                        <img src="./img/icon-error.svg" alt="error icon" class="error-icon">
+                        <input type="text" name="first-name" placeholder="First Name" required pattern="^[\w]{2,15}" title="name consists 2 to 15 alphabetic characters">
+                        <span class="error" aria-live="polite"></span>
+                    </div>
 
-                    <input type="password" name="password" id="" placeholder="password" required> <span class="error" aria-live="polite"></span>
+                    <div class="field-container">
+                        <img src="./img/icon-error.svg" alt="error icon" class="error-icon">
+                        <input type="text" name="last-name" placeholder="Last Name" required pattern="^[\w]{2,15}"title="name consists 2 to 15 alphabetic characters">
+                        <span class="error" aria-live="polite"></span>
+                    </div>
+
+                    <div class="field-container">
+                        <img src="./img/icon-error.svg" alt="error icon" class="error-icon">
+                        <input type="email" name="email-address" placeholder="Email Address" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" title="e.g abc@gmail.com">
+                        <span class="error" aria-live="polite"></span>
+                    </div>
+                    
+
+                    <div class="field-container">
+                        <img src="./img/icon-error.svg" alt="error icon" class="error-icon">
+                        <input type="password" name="password" id="" placeholder="password" required>
+                        <span class="error" aria-live="polite"></span>
+                    </div>
 
                     <button type="submit">claim your free trial</button>
                 </div>
