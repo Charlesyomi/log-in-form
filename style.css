@@ -95,6 +95,9 @@ form .content>*{
     line-height: .1rem;
     color: var(--red);
 }
+.error-type-placeholder::placeholder{
+    color: var(--red);
+}
 
 button{
     text-transform: uppercase;
